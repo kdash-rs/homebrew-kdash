@@ -15,5 +15,7 @@ class Kdash < Formula
 
   def install
     bin.install "kdash"
+    ohai "You're done!  Run with \"kdash\""
+    ohai "For runtime flags, see \"kdash --help\""
   end
 end

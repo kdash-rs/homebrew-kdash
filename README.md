@@ -16,6 +16,9 @@ A simple terminal dashboard for Kubernetes built with Rust
 ```
 brew tap kdash-rs/kdash
 brew install kdash
+
+# If you need to be more specific, use:
+brew install kdash-rs/kdash/kdash
 ```
 
 
