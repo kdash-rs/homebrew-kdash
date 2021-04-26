@@ -13,4 +13,4 @@ jobs:
 
       - name: Install tools
         run: |
-          brew install --build-bottle --verbose Formula/kdash.rb
+          brew install --build-bottle --verbose Formula/kdash.rb && kdash -h
