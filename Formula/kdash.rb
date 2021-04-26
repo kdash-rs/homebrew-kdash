@@ -1,16 +1,17 @@
+
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 class Kdash < Formula
   desc "A fast and simple dashboard for Kubernetes written in Rust"
   homepage "https://github.com/kdash-rs/kdash"
   if OS.mac?
-    url "https://github.com/kdash-rs/kdash/releases/download/v0.0.3/kdash-macos.tar.gz"
-    sha256 "f9d4107a027514e136b2e74474bca76af96987d15879dcbaabbabec4aee39395"
+    url "https://github.com/kdash-rs/kdash/releases/download/#{version}/kdash-macos.tar.gz"
+    sha256 "95c9282c0e8f16bc3b7f2dc9bb8c597950da451b6358ed75e4ef3ae09f497e2a"
   else
-    url "https://github.com/kdash-rs/kdash/releases/download/v0.0.3/kdash-linux.tar.gz"
-    sha256 "4774c6540be48d020faa06b6172a46cceb9e033663566e0ab174e8475d5ac0f3"
+    url "https://github.com/kdash-rs/kdash/releases/download/#{version}/kdash-linux-musl.tar.gz"
+    sha256 "ba6011f2e1257d63a531cf8a39ece6c84b86259de39aac613be2fdc1e39f782b"
   end
-  version "0.0.3"
+  version "v0.0.4"
   license "MIT"
 
   def install
