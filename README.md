@@ -9,7 +9,7 @@
 
 A simple terminal dashboard for Kubernetes built with Rust
 
-**This repo holds Homebrew Tap and Formula for KDash**
+**This repo holds Homebrew Tap and Formula for [KDash](https://github.com/kdash-rs/kdash)**
 
 # Install with
 
