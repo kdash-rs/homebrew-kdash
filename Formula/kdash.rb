@@ -5,13 +5,13 @@ class Kdash < Formula
   desc "A fast and simple dashboard for Kubernetes written in Rust"
   homepage "https://github.com/kdash-rs/kdash"
   if OS.mac?
-    url "https://github.com/kdash-rs/kdash/releases/download/v0.2.0/kdash-macos.tar.gz"
-    sha256 "f00f08c7960b1789ed16541c66081b50c82e368c31fce874742607407ed87041"
+    url "https://github.com/kdash-rs/kdash/releases/download/v0.2.1/kdash-macos.tar.gz"
+    sha256 "d86f6643ddf975cf2b153968d9bb902d5844575a270ebd92077a0571abfabe0d"
   else
-    url "https://github.com/kdash-rs/kdash/releases/download/v0.2.0/kdash-linux-musl.tar.gz"
-    sha256 "fb8cf6347e23943da0030f02505e99e4a86a0206ca2f92c35ef72c37c0da2bce"
+    url "https://github.com/kdash-rs/kdash/releases/download/v0.2.1/kdash-linux-musl.tar.gz"
+    sha256 "d7b18b52a2680eb37d545f024b8ed5570d7e289ece7fa99aafcfff1a4111ff56"
   end
-  version "v0.2.0"
+  version "v0.2.1"
   license "MIT"
 
   def install
