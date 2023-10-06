@@ -10,8 +10,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-
-      - name: Install tools
+      - name: Install tools Linux
+        if: matrix.runs-on == 'ubuntu-latest'
+        shell: bash
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          brew install --build-bottle --verbose Formula/kdash.rb && kdash -h
+          /home/linuxbrew/.linuxbrew/bin/brew install --build-bottle --verbose Formula/kdash.rb && kdash -h
+      - name: Install tools Mac
+        if: matrix.runs-on == 'macOS-latest'
+        shell: bash
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          /home/homebrew/.homebrew/bin/brew install --build-bottle --verbose Formula/kdash.rb && kdash -h
