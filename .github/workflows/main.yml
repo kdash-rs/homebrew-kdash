@@ -24,5 +24,7 @@ jobs:
         shell: bash
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          /home/homebrew/.homebrew/bin/brew install --build-bottle --verbose Formula/kdash.rb
+          (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/runner/.bash_profile
+          eval "$(/usr/local/bin/brew shellenv)"
+          brew install --build-bottle --verbose Formula/kdash.rb
           kdash -h
