@@ -6,13 +6,13 @@ class Kdash < Formula
   homepage "https://github.com/kdash-rs/kdash"
   if OS.mac? and Hardware::CPU.arm?
     url "https://github.com/kdash-rs/kdash/releases/download/v1.0.0/kdash-macos-arm64.tar.gz"
-    sha256 "30f58c2257ec44186e7455d81b93848b956b7aabda645f55716a7142a4a43611"
+    sha256 "c738361518310ce809ca68ddc26e8677e84c83fe0c4a5d916dc6f673168cc463"
   elsif OS.mac? and Hardware::CPU.intel?
     url "https://github.com/kdash-rs/kdash/releases/download/v1.0.0/kdash-macos.tar.gz"
-    sha256 "bf6b1d9f839292618514f16ad839e0d9dda5c52f20d9fbd005639a9f2ff2a4ec"
+    sha256 "d99b986489764aa6017c1eb9c42d0282dc86bca54a380afc0d21bb8134969fc1"
   else
     url "https://github.com/kdash-rs/kdash/releases/download/v1.0.0/kdash-linux-musl.tar.gz"
-    sha256 "b1578b635df3bf8d1bd749d4584793b3d138c67c4d162dde4716122037648fbf"
+    sha256 "8096cd2d050e1743f972b48d4a90607dd82dd56d3a08ca349df8f505fd692e2d"
   end
   version "v1.0.0"
   license "MIT"
